@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 11.5pt;
+    transition: all 0.3s;
+}
+
+img {
+    object-fit: cover;
+    object-position: top left;
+}
+
+header {
+    position: absolute;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    width: 100%;
+    height: 60px;
+    padding: 35px 15px;
+    z-index: 1;
+}
+
+#menu-icon {
+    width: 15px;
+    transition: all 0.5s;
+}
+
+#menu-icon:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#logo {
+    width: 70px;
+    grid-column-start: 3;
+    justify-self: center;
+}
+
+nav {
+    display: none;
+    padding: 0 25px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    width: 100vw;
+    height: 95px;
+    font-weight: 700;
+}
+
+nav a {
+    text-decoration: none;
+    justify-self: end;
+}
+
+nav a:visited {
+    color: black;
+}
+
+nav a:hover {
+    color: hsl(0, 0%, 63%);
+}
+
+#close-icon {
+    width: 15px;
+}
+
+#close-icon:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+
+#desktop-logo {
+    display: none;
+}
+
+#hero-slideshow {
+    position: relative;
+    width: 100%;
+}
+
+.mobile-hero-image {
+    width: 100%;
+}
+
+#mobile-hero-image-1 {
+    display: flex;
+}
+
+#mobile-hero-image-2 {
+    display: none;
+}
+
+#mobile-hero-image-3 {
+    display: none;
+}
+
+#desktop-hero-images {
+    display: none;
+}
+
+#slideshow-arrows {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.slideshow-arrow {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px 18px;
+    transition: all 0.5s;
+}
+
+.slideshow-arrow:hover {
+    background-color: hsl(0, 0%, 63%);
+    cursor: pointer;
+}
+
+#slideshow-left-arrow {
+    background-image: url("./images/icon-angle-left.svg");
+}
+
+#slideshow-right-arrow {
+    background-image: url("./images/icon-angle-right.svg");
+}
+
+h1 {
+    font-size: 30pt;
+    line-height: 0.9;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+p {
+    color: hsl(0, 0%, 63%);
+    line-height: 1.3;
+}
+
+#hero-text-section {
+    padding: 70px 30px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.shop-now {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 11pt;
+    letter-spacing: 11px;
+    text-decoration: none;
+    margin-top: 18px;
+    white-space: nowrap;
+}
+
+.shop-now:hover {
+    opacity: 0.4;
+}
+
+.shop-now:visited {
+    color: black;
+}
+
+
+#hero-text-1 {
+    display: flex;
+}
+
+#hero-text-2 {
+    display: none;
+}
+
+#hero-text-3 {
+    display: none;
+}
+
+#about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#about-text {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 30px;
+    gap: 17px;
+    justify-content: center;
+}
+
+#about-section h2 {
+    text-transform: uppercase;
+    font-size: 10pt;
+    letter-spacing: 7px;
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        height: 100vh;
+    }
+
+    p {
+        line-height: 1.4;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        min-width: 400px;
+        width: 35%;
+        padding-top: 5%;
+        padding-left: 5%;
+        justify-content: space-between;
+        background-color: transparent;
+        color: white;
+    }
+
+    nav a:visited {
+        color: white;
+    }
+
+    nav a:hover {
+        color: hsl(0, 0%, 27%)
+    }
+
+    #close-icon {
+        display: none;
+    }
+
+    #hero-section {
+        display: flex;
+        height: 65vh;
+    }
+
+    #desktop-logo {
+        display: flex;
+    }
+
+    #desktop-hero-images {
+        display: flex;
+    }
+
+    #mobile-hero-images {
+        display: none;
+    }
+
+    .desktop-hero-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    #desktop-hero-image-1 {
+        display: flex;
+    }
+
+    #desktop-hero-image-2 {
+        display: none;
+    }
+
+    #desktop-hero-image-3 {
+        display: none;
+    }
+
+    #hero-text-section {
+        display: flex;
+        align-items: start;
+        max-width: 40%;
+        padding: 6% 4%;
+        line-height: 0;
+    }
+
+    #hero-text-section h1 {
+        font-size: 34pt;
+    }
+
+    .shop-now {
+        margin-top: 0;
+    }
+
+    #slideshow-arrows {
+        left: 100%;
+        width: 150px;
+    }
+
+    .slideshow-arrow {
+        width: 75px;
+        height: 80px;
+    }
+
+    #about-section {
+        display: grid;
+        grid-template-columns: calc(40% - 150px) auto calc(40% - 150px);
+        height: 35vh;
+    }
+
+    #about-section h2 {
+        font-size: 12pt;
+    }
+
+    #about-text {
+        margin: 30px;
+        position: relative;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    #hero-text-section {
+        padding: 10% 6%;
+        align-items: center;
+
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>Frontend Mentor | Room homepage</title>
+
+</head>
+
+<body>
+  <header>
+    <img alt="menu icon" id="menu-icon" src="./images/icon-hamburger.svg" onclick="menu(this)">
+    <img alt="logo" id="logo" src="./images/logo.svg">
+    <nav>
+      <img alt="close icon" id="close-icon" src="./images/icon-close.svg" onclick="menu(this)">
+      <img alt="logo" id="desktop-logo" src="./images/logo.svg">
+
+      <a href="#">home</a>
+      <a href="#">shop</a>
+      <a href="#">about</a>
+      <a href="#">contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero-section">
+      <div id="hero-slideshow">
+        <div id="slideshow-arrows">
+          <div alt="slideshow left arrow" class="slideshow-arrow" id="slideshow-left-arrow" onclick="changeSlide(this)">
+          </div>
+          <div alt="slideshow right arrow" class="slideshow-arrow" id="slideshow-right-arrow"
+            onclick="changeSlide(this)"></div>
+        </div>
+
+        <div id="mobile-hero-images">
+          <img alt="hero image of white chair" class="mobile-hero-image" id="mobile-hero-image-1"
+            src="./images/mobile-image-hero-1.jpg">
+          <img alt="hero image of multiple chairs" class="mobile-hero-image" id="mobile-hero-image-2"
+            src="./images/mobile-image-hero-2.jpg">
+          <img alt="hero image of black chair" class="mobile-hero-image" id="mobile-hero-image-3"
+            src="./images/mobile-image-hero-3.jpg">
+        </div>
+
+        <div id="desktop-hero-images">
+          <img alt="hero image of white chair" class="desktop-hero-image" id="desktop-hero-image-1"
+            src="./images/desktop-image-hero-1.jpg">
+          <img alt="hero image of multiple chairs" class="desktop-hero-image" id="desktop-hero-image-2"
+            src="./images/desktop-image-hero-2.jpg">
+          <img alt="hero image of black chair" class="desktop-hero-image" id="desktop-hero-image-3"
+            src="./images/desktop-image-hero-3.jpg">
+        </div>
+      </div>
+      <section id="hero-text-section">
+        <div id="hero-text-1" class="hero-text">
+          <h1> Discover innovative ways to decorate </h1>
+
+          <p> We provide unmatched quality, comfort, and style for property owners across the country.
+            Our experts combine form and function in bringing your vision to life. Create a room in your
+            own style with our collection and make your property a reflection of you and what you love. </p>
+
+          <a href="#" class="shop-now"> Shop now <img alt="shop now link" class="shop-now-arrow"
+              src="./images/icon-arrow.svg"> </a>
+        </div>
+        <div id="hero-text-2" class="hero-text">
+          <h1> We are available all across the globe </h1>
+
+          <p> With stores all over the world, it's easy for you to find furniture for your home or place of business.
+            Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+            store locator. Any questions? Don't hesitate to contact us today. </p>
+
+          <a href="#" class="shop-now"> Shop now <img alt="shop now link" class="shop-now-arrow"
+              src="./images/icon-arrow.svg"> </a>
+        </div>
+        <div id="hero-text-3" class="hero-text">
+          <h1> Manufactured with the best materials </h1>
+
+          <p> Our modern furniture store provide a high level of quality. Our company has invested in advanced
+            technology
+            to ensure that every product is made as perfect and as consistent as possible. With three decades of
+            experience in this industry, we understand what customers want for their home and office. </p>
+
+          <a href="#" class="shop-now"> Shop now <img alt="shop now link" class="shop-now-arrow"
+              src="./images/icon-arrow.svg"> </a>
+        </div>
+      </section>
+    </section>
+
+    <section id="about-section">
+      <img alt="black chair" class="about-image" src="./images/image-about-dark.jpg">
+      <div id="about-text">
+        <h2> About our furniture </h2>
+
+        <p> Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space. </p>
+      </div>
+      <img alt="white chair" class="about-image" src="./images/image-about-light.jpg">
+    </section>
+
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>
