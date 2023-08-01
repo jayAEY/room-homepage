@@ -191,7 +191,6 @@ p {
     color: black;
 }
 
-
 #hero-text-1 {
     display: flex;
 }
@@ -231,6 +230,7 @@ p {
 
 @media screen and (min-width: 720px) {
     main {
+        min-height: 650px;
         height: 100vh;
     }
 
@@ -352,7 +352,7 @@ p {
     }
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1150px) {
     #hero-text-section {
         padding: 10% 5%;
         align-items: center;
