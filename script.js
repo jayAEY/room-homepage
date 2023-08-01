@@ -38,7 +38,7 @@ function changeSlide(arrow) {
 
 //display desktop menu if window is wider than 700px
 function desktopNav() {
-    if (window.innerWidth >= 700) {
+    if (window.innerWidth >= 720) {
         nav.style.display = "grid"
     } else {
         nav.style.display = "none"
